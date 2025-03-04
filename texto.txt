@@ -1,0 +1,2 @@
+Este es el contenido del archivo texto.txt.
+¡Node.js es genial!
