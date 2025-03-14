@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>lista de Tareas</h1>
-    <input type="text" id="taskInput" placeholder="Nueva Tareas">
-    <button id="addTaskBtn">Agregar</button>
-    <ul id="taskList"></ul>
-    <script src="/app7.js"></script>
-    
+
+    <div class="container">
+        <h2>Cajero Automático</h2>
+
+        <!-- Sección de ingreso de PIN -->
+        <div id="pin-section">
+            <p>Ingrese su PIN:</p>
+            <input type="password" id="pinInput">
+            <button onclick="validarPin()">Ingresar</button>
+            <p id="mensaje"></p>
+        </div>
+
+        <!-- Menú del cajero -->
+        <div id="menu">
+            <h3>Seleccione una opción:</h3>
+            <button onclick="consultarSaldo()">Consultar Saldo</button>
+            <button onclick="depositar()">Depositar Dinero</button>
+            <button onclick="retirar()">Retirar Dinero</button>
+            <button onclick="salir()">Salir</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

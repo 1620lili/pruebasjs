@@ -34,3 +34,5 @@ const PORT = 3000;
 server.listen(PORT,()=>{
     console.log(`Server corriendo en el http://localhost:${PORT}`);
 });
+
+// me indica que estamos corriendo en un seerver en el puerto 3000
